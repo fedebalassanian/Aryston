@@ -1,0 +1,24 @@
+/*Top Trends*/
+
+.ranking-bloque{
+    font-size: 100%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    img{
+        transform: scale(1.1,1.1);
+    }
+    .ranking-nombre{
+        color: black;
+        text-decoration: underline;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .ranking-descripcion{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

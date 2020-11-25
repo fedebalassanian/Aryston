@@ -1,0 +1,54 @@
+/* Productos */
+
+@mixin centrar-img{
+    display: block;
+    margin: auto;
+}
+
+.views-header{
+    text-align: center;
+    color: rgb(4, 80, 14);
+    font-style: italic;
+    font-size: 48px;
+    line-height: 0.5;
+}
+
+.views-titulo{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:white;
+    background-color: rgb(24, 119, 5);    
+}
+
+#caja-prod{
+    border-style: groove;
+    border-color: white;
+    padding-top: 5% ;
+    padding-right: 5% ;
+    padding-left: 5% ;
+    margin-bottom:3% ;
+}
+.caja-imagen{
+    @include centrar-img()
+}
+
+.caja-nombre{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vw;
+    padding-top: 0.5cm;
+    font-weight: bold;
+}
+
+.caja-precio{
+    @extend .caja-nombre;
+    background-color: green;
+    color: white;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .caja-imagen{
+        transform: scale(0.8,0.8);
+    }
+}

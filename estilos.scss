@@ -1,0 +1,128 @@
+/*Index*/
+
+@import "productos";
+@import "toptrends";
+@import "sobrenosotros";
+@import "contactanos";
+
+$anchos: ("ancho1": 1.25vw, "ancho2": 2.5vw, "ancho3": 3vw, "ancho4": 5vw, "ancho5": 7vw, "ancho6": 10vw );
+
+body{
+    background-image: linear-gradient(rgb(38, 241, 38),rgb(159, 226, 159));
+    background-size: cover;
+}
+
+.titulo{
+    border-style: dotted;
+    border-color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+.titulo-nombre{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: map-get($map: $anchos,$key: ancho4);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1cm;
+    animation-name: efecto-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.titulo-descripcion{
+    color: rgb(7, 77, 22);
+    font-style: normal;
+    font-weight: bolder;
+    font-size: map-get($map: $anchos,$key: ancho3);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 0.25cm;
+}
+
+.saludo{
+    font-size: map-get($map: $anchos,$key: ancho2);
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 496px){
+    .titulo-logo{
+        display: none;
+    }
+    .titulo-nombre{
+        font-size: map-get($map: $anchos,$key: ancho6);
+    }
+    .titulo-descripcion{
+        font-size: map-get($map: $anchos,$key: ancho5);
+    }
+    .joyasInicio{
+        display: none;
+    }
+    .saludo{
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-width: 496px){
+    .logo-responsive{
+        display: none;
+    }
+}
+
+.joyasInicio{
+    height: 15vh;
+    width: map-get($map: $anchos,$key: ancho5);
+}
+
+
+.carrusel-foto--agrandar{
+    transform: scale(3,4);
+    display: inline;
+}
+
+.carrusel-nombre{
+    color: rgb(6, 7, 6);
+    font-weight: bolder;
+    background-color: green;
+    font-size: 30px;
+    display: inline;
+}
+
+
+@keyframes efecto-uno{
+    25%{ transform: scale(1.1,1.1);}
+    75%{ color: gold;}
+
+}
+
+.bienvenida{
+    font-size: map-get($map: $anchos,$key: ancho2);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.titulo-barra{
+    display: flex;
+    font-size: map-get($map: $anchos,$key: ancho3);
+    color: cornsilk;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(56, 109, 3);
+    height: 100%;
+    border: solid 2px black
+}
+
+.footer{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
