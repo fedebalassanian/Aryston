@@ -13,6 +13,7 @@
         text-decoration: underline;
         font-weight: bolder;
         font-size: 30px;
+        font-family: cursive;
     }
     .ranking-descripcion{
         color: black;
@@ -20,5 +21,30 @@
         font-size: 20px;
         padding-left: 20%;
         padding-right: 20%;
+        font-family: cursive;
     }
+}
+
+.ranking-fondo--oro{
+    background-color: gold;
+    border-radius: 20px;
+    margin: 0% 15% 0% 15%;
+}
+
+.ranking-fondo--plata{
+    background-color: silver;
+    border-radius: 20px;
+    margin: 0% 15% 0% 15%;
+}
+
+.ranking-fondo--bronce{
+    background-color: orangered;
+    border-radius: 20px;
+    margin: 0% 15% 0% 15%;
+}
+
+.ranking-imgs{  
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }

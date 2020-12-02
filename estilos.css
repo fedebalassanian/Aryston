@@ -14,6 +14,9 @@
   text-align: center;
   color: white;
   background-color: #187705;
+  border-radius: 50px;
+  padding-top: 0.25cm;
+  padding-bottom: 0.25cm;
 }
 
 #caja-prod {
@@ -26,6 +29,7 @@
 }
 
 .caja-imagen {
+  border-radius: 10px;
   display: block;
   margin: auto;
 }
@@ -33,7 +37,7 @@
 .caja-nombre, .caja-precio {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 3.5vw;
+  font-size: 20px;
   padding-top: 0.5cm;
   font-weight: bold;
 }
@@ -41,6 +45,9 @@
 .caja-precio {
   background-color: green;
   color: white;
+  border-radius: 25px;
+  padding-bottom: 0.5cm;
+  font-size: 30px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -71,6 +78,7 @@
   text-decoration: underline;
   font-weight: bolder;
   font-size: 30px;
+  font-family: cursive;
 }
 
 .ranking-bloque .ranking-descripcion {
@@ -79,6 +87,31 @@
   font-size: 20px;
   padding-left: 20%;
   padding-right: 20%;
+  font-family: cursive;
+}
+
+.ranking-fondo--oro {
+  background-color: gold;
+  border-radius: 20px;
+  margin: 0% 15% 0% 15%;
+}
+
+.ranking-fondo--plata {
+  background-color: silver;
+  border-radius: 20px;
+  margin: 0% 15% 0% 15%;
+}
+
+.ranking-fondo--bronce {
+  background-color: orangered;
+  border-radius: 20px;
+  margin: 0% 15% 0% 15%;
+}
+
+.ranking-imgs {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 /*Sobre Nosotros*/
@@ -128,6 +161,7 @@ body {
           animation-duration: 4s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  padding-bottom: 0.5cm;
 }
 
 .titulo-descripcion {
@@ -146,7 +180,7 @@ body {
   font-weight: bolder;
 }
 
-@media only screen and (max-width: 496px) {
+@media only screen and (max-width: 900px) {
   .titulo-logo {
     display: none;
   }
@@ -164,7 +198,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 496px) {
+@media only screen and (min-width: 900px) {
   .logo-responsive {
     display: none;
   }
@@ -181,9 +215,10 @@ body {
   height: 199px;
   width: 388,25;
   background-color: lightgreen;
+  border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #menu-background {
     margin-right: 20%;
     margin-left: 20%;
@@ -280,7 +315,7 @@ body {
   line-height: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #footer-izquierda {
     text-align: center;
   }

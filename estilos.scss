@@ -31,6 +31,7 @@ body{
     animation-timing-function: ease-in;
     animation-duration: 4s;
     animation-delay: 0s;
+    padding-bottom: 0.5cm;
 }
 
 .titulo-descripcion{
@@ -49,7 +50,7 @@ body{
     font-weight: bolder;
 }
 
-@media only screen and (max-width: 496px){
+@media only screen and (max-width: 900px){
     .titulo-logo{
         display: none;
     }
@@ -67,7 +68,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 496px){
+@media only screen and (min-width: 900px){
     .logo-responsive{
         display: none;
     }
@@ -84,9 +85,10 @@ body{
     height: 199px;
     width: 388,25;
     background-color: lightgreen;  
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     #menu-background{
         margin-right: 20%;
         margin-left: 20%;
@@ -158,7 +160,7 @@ body{
     line-height: 0.5;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     #footer-izquierda{
         text-align: center;
     }
