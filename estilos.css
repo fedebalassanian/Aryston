@@ -47,7 +47,7 @@
   color: white;
   border-radius: 25px;
   padding-bottom: 0.5cm;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -282,13 +282,14 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #386d03;
+  background-color: #055e09;
   height: 100%;
   border: solid 2px black;
 }
 
 #top-line {
   border-top: 2px dotted green;
+  background-color: #47ca47;
 }
 
 #footer-izquierda {
